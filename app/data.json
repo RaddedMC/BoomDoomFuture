@@ -1,0 +1,124 @@
+{
+  "version": "v2",
+  "intents": 
+  {
+    "yes": 
+    {
+      "includes": [
+        "yes",
+        "correct",
+        "sure",
+        "absolutely",
+        "right",
+        "yep",
+        "you got it",
+        "I would",
+        "yeah",
+        "that's right", 
+        "I would", 
+        "why not", 
+        "sure no problem"
+      ],
+      "excludes": [
+        "fuck off"
+      ]
+    },
+    "no": {
+      "includes": [
+        "no",
+        "definitely not",
+        "wrong",
+        "incorrect",
+        "I do not",
+        "I don't",
+        "I would not",
+        "I wouldn't",
+        "no thank you"
+      ],
+      "excludes": [
+        "no, I want a delivery",
+        "no, I want it delivered"
+      ]
+    },
+    "repeat": {
+      "includes": [
+        "can you please repeat that", 
+        "can you repeat that",
+        "come again", 
+        "sorry what was that", 
+        "repeat that",
+        "can you repeat yourself",
+        "sorry I didn't quite catch that", 
+        "what did you say",
+        "what was that",
+        "sorry I missed that",
+        "say that again",
+        "sorry can you repeat that"
+      ]
+    }
+  },
+ 
+  "entities": 
+  {
+    "option": 
+    {
+      "open_set": false,
+      "values": [
+        {
+          "value": "A",
+          "synonyms": ["A", "the first one", "3", "number 1", "letter A", "hey", "8", "eight"]
+        },
+        {
+          "value": "B",
+          "synonyms": ["B", "the second one", "3", "number 2", "letter B, Bee"]
+        },
+        {
+          "value": "C",
+          "synonyms": ["C", "the third one", "3", "number 3", "letter C", "See", "Sea"]
+        },
+        {
+          "value": "D",
+          "synonyms": ["D", "the fourth one", "4", "number 4", "letter D", "the last one", "Dee"]
+        }
+      ],
+      "includes": [
+        "let's go with (A)[option]",
+        "let's go with (B)[option]",
+        "let's go with (C)[option]",
+        "let's go with (D)[option]",
+        "I'll choose option (A)[option]",
+        "I'll choose option (B)[option]",
+        "I'll choose option (C)[option]",
+        "I'll choose option (D)[option]",
+        "let's do (A)[option]",
+        "let's do (B)[option]",
+        "let's do (C)[option]",
+        "let's do (D)[option]",
+        "how about (A)[option]",
+        "how about (B)[option]",
+        "how about (C)[option]",
+        "how about (D)[option]",
+        "I think (A)[option]",
+        "I think (B)[option]",
+        "I think (C)[option]",
+        "I think (D)[option]",
+        "(A)[option]",
+        "(B)[option]",
+        "(C)[option]",
+        "(D)[option]",
+        "I'll pick option (A)[option]",
+        "I'll pick option (B)[option]",
+        "I'll pick option (C)[option]",
+        "I'll pick option (D)[option]",
+        "I'll go with a answer (A)[option]",
+        "I'll go with a option (B)[option]",
+        "I'll go with a option (C)[option]",
+        "I'll go with a option (D)[option]",
+        "uh (A)[option]",
+        "uh (B)[option]",
+        "uh (C)[option]",
+        "uh (D)[option]"
+      ]
+    }
+  }
+}
