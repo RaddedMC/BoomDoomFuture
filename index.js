@@ -14,7 +14,7 @@ async function main() {
 		console.log("Call complete!");
 
 		// Get the response back and send it to API
-		if (responses === false) {
+		if (!responses || responses.length < 3) {
 			// Call failed somehow
 			console.log("The call didn't work. Trying another number!");
 			continue;
@@ -139,6 +139,10 @@ async function call(number) {
 	app.dispose();
 
 	console.log("processed data", responses);
+
+	if (hungup) {
+		return false;
+	}
 	return responses;
 
 
